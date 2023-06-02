@@ -1,0 +1,209 @@
+body {
+  min-height: 100vh;
+  background-color: #0C134F;
+}
+
+section {
+  min-height: 10rem;
+  padding: 3rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.header {
+  width: 100%;
+  height: 8rem;
+  background: #1D267D;
+}
+.header__ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 1.8rem;
+  list-style: none;
+}
+.header__ul:hover {
+  cursor: pointer;
+}
+.header__li {
+  font-size: 2rem;
+}
+.header__link {
+  text-decoration: none;
+  color: #eee;
+  position: relative;
+}
+.header__link:hover {
+  cursor: pointer;
+}
+.header__link::after {
+  content: "";
+  height: 0.3rem;
+  width: 100%;
+  background: #D4ADFC;
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.header__link:hover::after {
+  transform: scaleX(1);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+.about__h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  color: #eee;
+  font-size: 4rem;
+}
+.about__h2 .h2__logo {
+  font-size: 130%;
+  margin-left: 2rem;
+}
+.about__article {
+  background-color: #D4ADFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.about__p {
+  max-width: 40rem;
+  font-size: 200%;
+}
+.about__icon {
+  font-size: 130%;
+}
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skilss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skilss__list {
+  width: 100rem;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background: #D4ADFC;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+.skilss__skill {
+  width: 100%;
+  flex-wrap: wrap;
+  aspect-ratio: 1/1;
+}
+.skilss__img {
+  width: 5rem;
+  height: 5rem;
+}
+.skilss__icon {
+  font-size: 900%;
+  transition: 0.3s all;
+}
+.skilss__icon:hover {
+  cursor: pointer;
+  font-size: 1000%;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+}
+.projects__project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1rem;
+  background: #D4ADFC;
+  position: relative;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.projects__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 200%;
+  margin-left: 1rem;
+}
+.projects__link {
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 200%;
+  color: black;
+  transition: 0.3s all;
+  margin-right: 1rem;
+}
+.projects__link:hover {
+  cursor: pointer;
+  font-size: 250%;
+}
+.projects__img {
+  width: 100%;
+  height: 100;
+  object-fit: cover;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.contact__link {
+  text-decoration: none;
+  color: #D4ADFC;
+}
+.contact__logo {
+  font-size: 600%;
+  transition: 0.3s all;
+}
+.contact__logo:hover {
+  cursor: pointer;
+  font-size: 800%;
+}
+
+.footer {
+  width: 100%;
+  background: #D4ADFC;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+
+@use "../../abstracts/colors";
+
+
+.skilss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__list{
+        width: 100rem;
+        height: 40rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        background: colors.$pink;
+        padding: 4rem;
+        border-radius: 1rem;
+        
+    }
+
+    &__skill{
+        width: 100%;
+        flex-wrap: wrap;
+        aspect-ratio: 1/1;
+       
+      
+       
+    }
+
+    &__img{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &__icon{
+        font-size: 900%;
+        transition: 0.3s all;
+
+        &:hover{
+            cursor: pointer;
+            font-size: 1000%;
+        }
+    }
+}

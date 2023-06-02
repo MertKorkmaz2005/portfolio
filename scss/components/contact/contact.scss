@@ -1,0 +1,31 @@
+@use "../../abstracts/colors";
+
+
+.contact{
+
+    &__links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: colors.$pink;
+     
+
+    }
+
+    &__logo{
+        font-size: 600%;
+        transition: 0.3s all;
+
+        &:hover{
+            cursor: pointer;
+            font-size: 800%;
+           }
+    }
+
+    
+}

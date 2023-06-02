@@ -1,0 +1,12 @@
+@use "./abstracts/colors";
+
+body{
+    min-height: 100vh;
+    background-color:colors.$dark-purple ;
+}
+
+section{
+    min-height: 10rem;
+    padding: 3rem;
+
+}
