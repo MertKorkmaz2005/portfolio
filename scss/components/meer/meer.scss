@@ -1,0 +1,22 @@
+@use "../../abstracts/colors";
+
+.meer{
+    margin: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: colors.$pink;
+    height: 30rem;
+    flex-direction: column;
+    gap: 5rem;
+
+    &__h2{
+        font-size: 300%;
+    }
+
+    &__p{
+        width: 70%;
+        font-size: 200%;
+
+    }
+}
